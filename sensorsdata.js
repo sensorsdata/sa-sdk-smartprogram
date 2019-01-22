@@ -7,6 +7,7 @@ var sa = {};
 var _ = {};
 
 sa.para = conf;
+sa.para.max_string_length = sa.para.max_string_length || 200;
 
 sa._queue = [];
 // 是否已经获取到系统信息
@@ -436,6 +437,7 @@ _.base64Encode = function (data) {
 };
 
 _.info = {
+  currentProps: {},
   properties: {
     $lib: LIB_NAME,
     $lib_version: String(LIB_VERSION),
@@ -521,7 +523,7 @@ sa.prepareData = function (p, callback) {
   // profile时不传公用属性
   if (!p.type || p.type.slice(0, 7) !== 'profile') {
     // 传入的属性 > 当前页面的属性 > session的属性 > cookie的属性 > 预定义属性
-    data.properties = _.extend({}, _.info.properties, sa.store.getProps(), data.properties);
+    data.properties = _.extend({}, _.info.properties, sa.store.getProps(),  _.info.currentProps, data.properties);
     // 判断是否是首日访问，果子说要做
     if (typeof sa.store._state === 'object' && typeof sa.store._state.first_visit_day_time === 'number' && sa.store._state.first_visit_day_time > (new Date()).getTime()) {
       data.properties.$is_first_day = true;
@@ -554,7 +556,7 @@ sa.store = {
 
   },
   getStorage: function () {
-    return swan.getStorageSync('sensorsdata2015_baidu') || {};
+    return swan.getStorageSync('sensorsdata2015_baidu') || '';
   },
   _state: {},
   toState: function (state) {
@@ -680,12 +682,18 @@ sa.trackSignup = function (id, e, p, c) {
   sa.store.set('distinct_id', id);
 };
 
+sa.registerApp = function (obj) {
+  if (_.isObject(obj) && !_.isEmptyObject(obj)) {
+    _.info.currentProps = _.extend(_.info.currentProps, obj);
+  }
+};
+/*
 sa.register = function (obj) {
   if (_.isObject(obj) && !_.isEmptyObject(obj)) {
     sa.store.setProps(obj);
   }
 };
-
+*/
 sa.clearAllRegister = function () {
   sa.store.setProps({}, true);
 };
