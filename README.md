@@ -3,7 +3,7 @@
 
 使用文档请参考 https://sensorsdata.cn/manual/smartprogram_sdk.html
 
-其中 sensorsdata.js 是源文件， sensorsdata.min.js 是压缩的文件。
+sensorsdata.min.js 是 SDK 主文件。
 
 ## 获取发行版
 
