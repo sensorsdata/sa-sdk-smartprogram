@@ -1,4 +1,8 @@
 # sa-sdk-smartprogram
+
+[![License](https://img.shields.io/github/license/sensorsdata/sa-sdk-smartprogram.svg)](https://github.com/sensorsdata/sa-sdk-smartprogram/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/sensorsdata/sa-sdk-smartprogram.svg)](https://github.com/sensorsdata/sa-sdk-smartprogram/releases)
+
 ## 神策百度小程序 SDK
 
 使用文档请参考 https://sensorsdata.cn/manual/smartprogram_sdk.html
