@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/github/license/sensorsdata/sa-sdk-smartprogram.svg)](https://github.com/sensorsdata/sa-sdk-smartprogram/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/sensorsdata/sa-sdk-smartprogram.svg)](https://github.com/sensorsdata/sa-sdk-smartprogram/releases)
 
+# sa-sdk-smartprogram
 ## 神策简介
 
 [**神策数据**](https://www.sensorsdata.cn/)
@@ -20,9 +21,6 @@
 请参见 [CHANGELOG.md](CHANGELOG.md)
 
 ## 招聘信息
-招聘详情可访问官网https://www.sensorsdata.cn/about/joinus.html
- 
-## 讨论
+招聘小程序 SDK 开发工程师，小程序 SDK 技术顾问，简历发送到邮箱 (shengyonggen@sensorsdata.cn)<br>
+详情可访问官网https://www.sensorsdata.cn/about/joinus.html
 
-可以扫码加入神策官方 SDK QQ 讨论群：<br><br>
-![ QQ 讨论群](https://github.com/sensorsdata/sa-sdk-android/raw/master/docs/qrCode.jpeg)
