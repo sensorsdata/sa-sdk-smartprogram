@@ -1,7 +1,7 @@
 ## 0.5.0(2020-03-30)
-* 新增：新增 init() 接口，在调用 init() 接口之前，采集的数据被缓存在内存中；调用 init() 接口后，会将缓存的数据通过网络发送出去；
+* 新增：新增 init() 接口。注意：在调用 init() 接口之前，采集的数据被缓存在内存中；调用 init() 接口后，会将缓存的数据通过网络发送出去！！！；
 * 新增：渠道采集功能；
-* 优化：去掉了 sensorsdata_conf.js 文件，增加 setPara() 方法初始化配置参数；
+* 优化：去掉了 sensorsdata_conf.js 文件，增加 setPara() 方法初始化配置参数！！！新版集成文档 https://manual.sensorsdata.cn/sa/latest/tech_sdk_client_mp_bd-1573898.html#id-.%E7%99%BE%E5%BA%A6%E5%B0%8F%E7%A8%8B%E5%BA%8FSDKv1.13-%E9%9B%86%E6%88%90%E4%B8%8E%E4%BD%BF%E7%94%A8；
 
 ## 0.4.0
 * 优化：全局定义 mpshow_time
