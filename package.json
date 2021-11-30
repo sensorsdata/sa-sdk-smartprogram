@@ -1,6 +1,6 @@
 {
   "name": "sa-sdk-smartprogram",
-  "version": "0.15.2",
+  "version": "0.15.3",
   "description": "神策百度小程序SDK",
   "main": "sensorsdata.min.js",
   "scripts": {
